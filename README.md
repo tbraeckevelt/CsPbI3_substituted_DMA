@@ -4,7 +4,7 @@ A repository for the paper about the effect of DMA substitutions on the structur
 This repository consists of three folders:
 
 - Create_init_struc: contains the files to generate initial structure to perform the active learning
-*Create_subst.py: Python file to generate DMA (randomly rotated) substituted CsPbI3 with varying concentrations, uses GammaOpt.vasp and DMA_aligned.xyz as input
+*Create_subst.py: Python file to generate DMA (randomly rotated) substituted CsPbI3 with varying concentrations, uses GammaOpt.vasp and DMA_aligned.xyz as input. 
 *UMLP_MACE.tar.gz: the files created with python script are a bit artificial and some relexation is necessary to generate realistic sample. 
                    To not perform to many acitve learning steps to perform this relexation, the foundation model of MACE (MACE-MP-0) is used instead (see MD simulation folder, 
                    the same MDs were performed with foundation model). The file is tarred te reduce memeory requirements.
