@@ -1,0 +1,47 @@
+---
+container:
+  engine: "apptainer"
+  uri: "oras://ghcr.io/tbraeckevelt/psiflow_own:3.0.0_python3.9_cuda"
+ModelEvaluation:
+  cores_per_worker: 12
+  simulation_engine: 'yaff'
+  gpu: true
+  SlurmProvider:
+    partition: "gpu_rome_a100"
+    account: "2023_096"
+    nodes_per_block: 1
+    cores_per_node: 12
+    init_blocks: 1
+    max_blocks: 100
+    walltime: "71:59:00"
+    exclusive: false
+    scheduler_options: "#SBATCH --clusters=dodrio\n#SBATCH --gpus=1\n"
+ModelTraining:
+  cores_per_worker: 12
+  gpu: true
+  SlurmProvider:
+    partition: "gpu_rome_a100"
+    account: "2023_096"
+    nodes_per_block: 1
+    cores_per_node: 12  
+    init_blocks: 0      
+    max_blocks: 1       
+    walltime: "71:59:00"
+    exclusive: false
+    scheduler_options: "#SBATCH --clusters=dodrio\n#SBATCH --gpus=1\n"
+ReferenceEvaluation:
+  cores_per_worker: 64
+  max_walltime: 40
+  cpu_affinity: 'none'
+  SlurmProvider:
+    partition: "cpu_milan"
+    account: "2024_026"
+    nodes_per_block: 1
+    cores_per_node: 64
+    init_blocks: 0
+    min_blocks: 0 
+    max_blocks: 50
+    walltime: "01:00:00"
+    exclusive: false
+    scheduler_options: "#SBATCH --clusters=dodrio\n"
+...

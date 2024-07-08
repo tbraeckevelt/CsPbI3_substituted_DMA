@@ -1,0 +1,17 @@
+####################
+got input ['/vscmnt/gent_kyukon_data/_kyukon_data_gent/vo/000/gvo00003/shared/tombraeckevelt/clusters/gpu_rome_a100/software/psiflow-3.0.0_own/psiflow_env/lib/python3.9/site-packages/ownscripts/bash_app_python.py', '--folder', '/dodrio/scratch/projects/2023_096/DMA_bondangles/runMDs/output', '--file_in', 'get_bondangles_distribution_000.inp.cloudpickle', '--file_out', 'get_bondangles_distribution_000.outp.cloudpickle']
+task started at 31/03/2024 19:28:42 
+working in folder /dodrio/scratch/projects/2023_096/DMA_bondangles/runMDs/output
+####################
+0 152.9387481902303
+8 154.91335202426689
+16 155.26299834783575
+24 155.4260968138548
+32 155.84097670511667
+40 156.36954631353737
+48 156.98717479141357
+56 158.1917471228152
+64 160.04737800503617
+####################
+task finished at 31/03/2024 21:06:27
+####################
